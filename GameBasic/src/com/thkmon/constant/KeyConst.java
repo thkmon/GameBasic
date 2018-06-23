@@ -28,14 +28,4 @@ public class KeyConst {
 	public static boolean onKeyRight = false;
 	public static boolean onKeyEnter = false;
 	public static boolean onKeyCancel = false;
-	
-	// 모든 키입력 해제
-//	public static void releaseAllKeys() {
-//		onKeyUp = false;
-//		onKeyDown = false;
-//		onKeyLeft = false;
-//		onKeyRight = false;
-//		onKeyEnter = false;
-//		onKeyCancel = false;
-//	}
 }

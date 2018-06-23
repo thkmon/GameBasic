@@ -11,16 +11,7 @@ import data.TileBox;
 
 public class MapUtil {
 	
-	private static TileBox tileBox = null;
-	
-	
-	public MapUtil() {
-		tileBox = makeBasicBox();
-	}
-	
-	
-	private static TileBox makeBasicBox() {
-		
+	public static TileBox makeBasicBox() {
 		TileBox tileBox = new TileBox();
 		
 		addToTileBox(tileBox, MapConst.blockTileImg, "B");
@@ -54,9 +45,9 @@ public class MapUtil {
 	
 	
 	public static Tile getTile(String tileName) {
-		Tile tileObj = tileBox.get(tileName);
+		Tile tileObj = MapConst.tileBox.get(tileName);
 		if (tileObj == null) {
-			LogUtil.debug("MapUtil getTile : tile is null. tileName == [" + tileName + "]");
+//			LogUtil.debug("MapUtil getTile : tile is null. tileName == [" + tileName + "]");
 			return null;
 		}
 		
@@ -68,5 +59,13 @@ public class MapUtil {
 		StringList testMapContent = TextUtil.readTextFile(mapFilePath);
 		MapInfo testMapInfo = new MapInfo(testMapContent);
 		return testMapInfo;
+	}
+	
+	
+	public static boolean moveMapLeft() {
+		
+		
+		
+		return true;
 	}
 }

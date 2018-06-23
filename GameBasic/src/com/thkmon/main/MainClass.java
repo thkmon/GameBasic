@@ -1,7 +1,6 @@
 package com.thkmon.main;
 
 import java.awt.BorderLayout;
-import java.awt.Dimension;
 
 import javax.swing.JFrame;
 
@@ -14,7 +13,6 @@ import com.thkmon.engine.GameEngine;
 import com.thkmon.engine.GraphicEngine;
 import com.thkmon.engine.KeyEngine;
 import com.thkmon.util.LogUtil;
-import com.thkmon.util.MapUtil;
 
 public class MainClass {
 
@@ -26,8 +24,7 @@ public class MainClass {
 		
 		try {
 			// load classes
-			MapConst mapConst = new MapConst();
-			MapUtil mapUtil = new MapUtil();
+			new MapConst();
 			
 			// 일단 전체 사이즈로 띄웠다가, 원하는 사이즈로 변경한다. 초기 폼크기 바깥에 이미지 그려지지 않는 현상 때문.
 			// Dimension desktop = java.awt.Toolkit.getDefaultToolkit().getScreenSize();

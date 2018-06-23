@@ -21,4 +21,10 @@ public class BasicConst {
 	
 	public static final int FORM_WIDTH = 800;
 	public static final int FORM_HEIGHT = 600;
+	
+	public static int mapLeftMargin = 0;
+	public static int mapTopMargin = 0;
+	
+	public static int mapAxisX = 0;
+	public static int mapAxisY = 0;
 }

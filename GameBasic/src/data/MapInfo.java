@@ -20,6 +20,14 @@ public class MapInfo {
 	
 	
 	public String getTileName(int rowPosition, int colPosition) {
+		if (rowPosition < 0 || rowPosition > 1000) {
+			return "";
+		}
+		
+		if (colPosition < 0 || colPosition > 1000) {
+			return "";
+		}
+		
 		return mapArray[rowPosition][colPosition];
 	}
 	
