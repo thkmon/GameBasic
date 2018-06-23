@@ -14,11 +14,11 @@ public class BasicPanel extends JPanel {
 	public void paint(Graphics g) {
 		// LogUtil.debug("BasicPanel paint");
 		
-		int formWidth = BasicConst.BasicForm.getWidth();
-		int formHeight = BasicConst.BasicForm.getHeight();
+		// int formWidth = BasicConst.BasicForm.getWidth();
+		// int formHeight = BasicConst.BasicForm.getHeight();
 		
 		Graphics2D g2d = (Graphics2D) g;
-		g2d.fillRect(0, 0, formWidth, formHeight);
+		g2d.fillRect(0, 0, 1, 1);
 		g2d.setColor(ColorConst.BLACK);
 		g2d.dispose();
 	}

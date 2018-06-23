@@ -17,6 +17,8 @@ public class BasicForm extends JFrame {
 	private static Toolkit toolKit = Toolkit.getDefaultToolkit();
 	
 	public BasicForm() {
+		
+		
 		// 리사이즈
 		this.addComponentListener(new ComponentAdapter() {
 	        public void componentResized(ComponentEvent e) {
