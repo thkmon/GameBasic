@@ -34,7 +34,8 @@ public class TextUtil {
 //		  }
 //		 }
 //		 
-		 
+
+	
 	public static StringList readTextFile(String filePath) {
 		
 		if (filePath == null || filePath.length() == 0) {
@@ -50,9 +51,9 @@ public class TextUtil {
 
 		StringList resultList = null;
 		
-		BufferedReader br = null;
 		FileInputStream fis = null;
 		InputStreamReader isr = null;
+		BufferedReader br = null;
 		
 		try {
 			if (!file.exists()) {

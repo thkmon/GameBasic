@@ -39,7 +39,6 @@ public class GameEngine extends Thread {
 						
 						BasicConst.mapAxisX = BasicConst.mapAxisX - tileCount;
 						BasicConst.mapLeftMargin = ramain;
-						System.out.println(BasicConst.mapAxisX);
 						
 					} else if (BasicConst.mapLeftMargin <= -40) {
 						int ramain = (BasicConst.mapLeftMargin * -1) % 40;
@@ -47,7 +46,6 @@ public class GameEngine extends Thread {
 						
 						BasicConst.mapAxisX = BasicConst.mapAxisX + tileCount;
 						BasicConst.mapLeftMargin = -ramain;
-						System.out.println(BasicConst.mapAxisX);
 					}
 					
 					if (BasicConst.mapTopMargin >= 40) {
@@ -56,7 +54,6 @@ public class GameEngine extends Thread {
 						
 						BasicConst.mapAxisY = BasicConst.mapAxisY - tileCount;
 						BasicConst.mapTopMargin = ramain;
-						System.out.println(BasicConst.mapAxisY);
 					
 					} else if (BasicConst.mapTopMargin <= -40) {
 						int ramain = (BasicConst.mapTopMargin * -1) % 40;
@@ -64,7 +61,6 @@ public class GameEngine extends Thread {
 						
 						BasicConst.mapAxisY = BasicConst.mapAxisY + tileCount;
 						BasicConst.mapTopMargin = -ramain;
-						System.out.println(BasicConst.mapAxisY);
 					}
 					
 					printMap(backSurface, MapConst.testMap, BasicConst.mapAxisX, BasicConst.mapAxisY, BasicConst.mapLeftMargin, BasicConst.mapTopMargin);
