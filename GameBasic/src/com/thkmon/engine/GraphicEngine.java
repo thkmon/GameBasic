@@ -22,12 +22,19 @@ public class GraphicEngine extends Thread {
 					BasicConst.animaTime = 0;
 				}
 				
-				// LogUtil.debug("BasicConst.animaTime : " + BasicConst.animaTime);
-				
+				// 화면이 가로 사이즈 중앙에 오도록 처리.
+				int formWidth = BasicConst.BasicForm.getWidth() - 20;
+				int margin = formWidth - BasicConst.currentWidth;
+				int remain = margin % 2;
+				int leftMargin = (margin - remain) / 2;
+				if (leftMargin < 0) {
+					leftMargin = 0;
+				}
+//				
 				if (BasicConst.frontSurfaceIs1) {
-					g2d.drawImage(BasicConst.surface1, 0, 0, BasicConst.currentWidth, BasicConst.currentHieght, ColorConst.BLACK, null);
+					g2d.drawImage(BasicConst.surface1, leftMargin, 0, BasicConst.currentWidth, BasicConst.currentHieght, ColorConst.BLACK, null);
 				} else {
-					g2d.drawImage(BasicConst.surface2, 0, 0, BasicConst.currentWidth, BasicConst.currentHieght, ColorConst.BLACK, null);
+					g2d.drawImage(BasicConst.surface2, leftMargin, 0, BasicConst.currentWidth, BasicConst.currentHieght, ColorConst.BLACK, null);
 				}
 				
 				// draw 60 times per 1 second.
