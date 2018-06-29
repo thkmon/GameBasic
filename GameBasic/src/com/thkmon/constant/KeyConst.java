@@ -22,10 +22,12 @@ public class KeyConst {
 	public static final int CTRL = 17;
 	public static final int ALT = 18;
 	
-	public static boolean onKeyUp = false;
-	public static boolean onKeyDown = false;
-	public static boolean onKeyLeft = false;
-	public static boolean onKeyRight = false;
-	public static boolean onKeyEnter = false;
-	public static boolean onKeyCancel = false;
+//	public static boolean onKeyUp = false;
+//	public static boolean onKeyDown = false;
+//	public static boolean onKeyLeft = false;
+//	public static boolean onKeyRight = false;
+//	public static boolean onKeyEnter = false;
+//	public static boolean onKeyCancel = false;
+	
+	public static boolean readyToKeyInput = true;
 }
